@@ -4,10 +4,7 @@ import '../../../core/constant/text_utils.dart';
 import '../../../product/logic/controller/cart_controller.dart';
 import '../../../product/logic/controller/product_controller.dart';
 import '../../../product/model/product_model.dart';
-import '../../../product/view/screen/screen/product_details.dart';
 import '../../logic/controller/category_controller.dart';
-
-
 
 class CategoryItems extends StatelessWidget {
   final String catehoryTitle;
@@ -27,7 +24,7 @@ class CategoryItems extends StatelessWidget {
       appBar: AppBar(
         title: Text(catehoryTitle),
         centerTitle: true,
-        backgroundColor:Colors.cyan,
+        backgroundColor: context.theme.backgroundColor,
       ),
       body: Obx(() {
         if (categoryController.isAllCategory.value) {
@@ -52,11 +49,7 @@ class CategoryItems extends StatelessWidget {
                   rate: categoryController.categoryList[index].rating.rate,
                   productId: categoryController.categoryList[index].id,
                   productModels: categoryController.categoryList[index],
-                  onTap: () {
-                    Get.to(() => ProductDetailesScreen(
-                      productModels: categoryController.categoryList[index],
-                    ));
-                  });
+                  onTap: () {});
             },
           );
         }
@@ -90,36 +83,6 @@ class CategoryItems extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Obx(
-                    () => Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    // IconButton(
-                    //   onPressed: () {
-                    //    // controller.manageFavourites(productId);
-                    //   },
-                    //   // icon: controller.isFavourites(productId)
-                    //   //     ? const Icon(
-                    //   //   Icons.favorite,
-                    //   //   color: Colors.red,
-                    //   // )
-                    //   //     : const Icon(
-                    //   //   Icons.favorite_outline,
-                    //   //   color: Colors.black,
-                    //   // ),
-                    // ),
-                    IconButton(
-                      onPressed: () {
-                        cartController.addProductToCart(productModels);
-                      },
-                      icon: const Icon(
-                        Icons.shopping_cart,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               Container(
                 width: double.infinity,
                 height: 140,

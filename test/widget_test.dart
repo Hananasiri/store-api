@@ -1,4 +1,4 @@
-import 'package:api_store/product/view/screen/screen/product_screen.dart';
+import 'package:api_store/product/view/screen/product_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

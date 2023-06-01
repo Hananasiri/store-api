@@ -48,7 +48,6 @@ class ProductModels {
 }
 
 enum Category { MEN_S_CLOTHING, JEWELERY, ELECTRONICS, WOMEN_S_CLOTHING }
-
 final categoryValues = EnumValues({
   "electronics": Category.ELECTRONICS,
   "jewelery": Category.JEWELERY,

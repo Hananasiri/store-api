@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../logic/controller/category_controller.dart';
-import 'category_items.dart';
-
+import '../screen/category_items.dart';
 
 class CategoryWidget extends StatelessWidget {
   CategoryWidget({Key? key}) : super(key: key);
 
- final controller = Get.find<CategoryController>();
+  final controller = Get.find<CategoryController>();
 
   @override
   Widget build(BuildContext context) {
     return Obx(
-          () {
+      () {
         if (controller.isCatgeoryLoading.value) {
           return Center(
             child: CircularProgressIndicator(
@@ -27,8 +26,8 @@ class CategoryWidget extends StatelessWidget {
                   onTap: () {
                     controller.getCategoryIndex(index);
                     Get.to(() => CategoryItems(
-                      catehoryTitle: controller.categoryNameList[index],
-                    ));
+                          catehoryTitle: controller.categoryNameList[index],
+                        ));
                   },
                   child: Container(
                     height: 150,

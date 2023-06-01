@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../core/constant/text_utils.dart';
-import '../card_items.dart';
+import '../../../core/constant/text_utils.dart';
+import '../widget/card_items.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({Key? key}) : super(key: key);

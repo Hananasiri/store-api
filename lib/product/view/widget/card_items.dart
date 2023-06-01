@@ -1,4 +1,3 @@
-import 'package:api_store/product/view/screen/screen/product_details.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/constant/text_utils.dart';
@@ -39,9 +38,9 @@ class CardItems extends StatelessWidget {
                   productId: controller.productList[index].id,
                   productModels: controller.productList[index],
                   onTap: () {
-                    Get.to(() => ProductDetailesScreen(
-                          productModels: controller.productList[index],
-                        ));
+                    // Get.to(() => ProductDetailesScreen(
+                    //       productModels: controller.productList[index],
+                    //     ));
                   });
             },
           ),

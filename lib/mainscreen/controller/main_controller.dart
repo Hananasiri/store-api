@@ -1,5 +1,5 @@
 import 'package:api_store/category/view/screen/category_screen.dart';
-import 'package:api_store/product/view/screen/screen/product_screen.dart';
+import 'package:api_store/product/view/screen/product_screen.dart';
 import 'package:get/get.dart';
 
 
