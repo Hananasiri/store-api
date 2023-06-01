@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../constant/text_utils.dart';
+import '../../../core/constant/text_utils.dart';
 import '../widget/category_widget.dart';
 
 class CategoryScreen extends StatelessWidget {

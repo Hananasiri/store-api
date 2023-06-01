@@ -1,5 +1,5 @@
 import 'package:http/http.dart' as http;
-import '../../../constant/api_string.dart';
+import '../../../core/constant/api_string.dart';
 import '../../model/product_model.dart';
 
 class ProductServices{

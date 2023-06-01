@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../constant/text_utils.dart';
+import '../../../core/constant/text_utils.dart';
 import '../../../product/logic/controller/cart_controller.dart';
 import '../../../product/logic/controller/product_controller.dart';
 import '../../../product/model/product_model.dart';

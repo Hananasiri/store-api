@@ -1,5 +1,5 @@
 import 'package:http/http.dart' as http;
-import '../../../constant/api_string.dart';
+import '../../../core/constant/api_string.dart';
 import '../../../product/model/product_model.dart';
 import '../../model/category_models.dart';
 

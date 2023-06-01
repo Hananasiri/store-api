@@ -1,7 +1,7 @@
 import 'package:api_store/product/view/screen/screen/product_details.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../constant/text_utils.dart';
+import '../../../core/constant/text_utils.dart';
 import '../../logic/controller/cart_controller.dart';
 import '../../logic/controller/product_controller.dart';
 import '../../model/product_model.dart';
